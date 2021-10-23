@@ -32,8 +32,8 @@ export default (state = {}, action) => {
 //         stream object with id of id
 //     },
 //     5:{
-//          title:"bjru",
-//          description:"chajru",
+//          title:"abc",
+//          description:"efc",
 //          id:5
 //      }
 //
