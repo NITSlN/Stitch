@@ -18,6 +18,11 @@ class StreamShow extends React.Component {
   componentDidUpdate() {
     this.buildPlayer()
   }
+  
+  // cleaning up the video player
+  componentWillUnmount(){
+    this.player.destroy() // tells to stop attempting to stream video and detach itself from video element 
+  }
 
   buildPlayer() {
     // we need this if statement beacause when the stream is not fetched than there is no video element (look in the return part )in the page so it will give an error
